@@ -11,7 +11,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class CafeFragment : Fragment() {
 
-    private val TABS_FIXED = arrayOf(
+    private val TABS = arrayOf(
         R.string.starbucks_title,
         R.string.janjijiwa_title,
         R.string.kopikenangan_title
@@ -30,11 +30,12 @@ class CafeFragment : Fragment() {
         val viewPager = view.findViewById<ViewPager2>(R.id.view_pager)
         val tabLayout = view.findViewById<TabLayout>(R.id.tab_layout)
 
-        val adapter = CafeAdapter(childFragmentManager, lifecycle)
+        // ✅ Pass requireContext() so CafeAdapter can fetch string resources
+        val adapter = CafeAdapter(childFragmentManager, lifecycle, requireContext())
         viewPager.adapter = adapter
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            tab.text = resources.getString(TABS_FIXED[position])
+            tab.text = getString(TABS[position])
         }.attach()
     }
 }

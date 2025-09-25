@@ -1,21 +1,27 @@
 package com.example.lab_week_04
 
+import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class CafeAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
-    FragmentStateAdapter(fragmentManager, lifecycle) {
+class CafeAdapter(
+    fragmentManager: FragmentManager,
+    lifecycle: Lifecycle,
+    private val context: Context
+) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
-    override fun getItemCount(): Int = 3
+    private val DESCRIPTIONS = arrayOf(
+        R.string.starbucks_desc,
+        R.string.janjijiwa_desc,
+        R.string.kopikenangan_desc
+    )
+
+    override fun getItemCount(): Int = DESCRIPTIONS.size
 
     override fun createFragment(position: Int): Fragment {
-        return when (position) {
-            0 -> CafeDetailFragment.newInstance("Starbucks")
-            1 -> CafeDetailFragment.newInstance("Janji Jiwa")
-            2 -> CafeDetailFragment.newInstance("Kopi Kenangan")
-            else -> CafeDetailFragment.newInstance("Unknown")
-        }
+        val desc = context.getString(DESCRIPTIONS[position])
+        return CafeDetailFragment.newInstance(desc)
     }
 }

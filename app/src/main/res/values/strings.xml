@@ -1,30 +1,35 @@
 <resources>
-    <string name="app_name">LAB_WEEK_04</string>
-    <string name="app_title">Coffee App</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="menu_coffee">Coffee List</string>
-    <string name="menu_favorites">Favorite Coffee</string>
-    <string name="affogato_title">AFFOGATO</string>
-    <string name="affogato_desc">Espresso poured on a vanilla ice cream. Served in a
-cappuccino cup.</string>
-    <string name="americano_title">AMERICANO</string>
-    <string name="americano_desc">Espresso with added hot water (100-150 ml). Often served in a cappuccino cup. (The espresso is added into the hot water rather than
-all the water being flowed through the coffee that would lead to over
-extraction.)</string>
-    <string name="latte_title">CAFFE LATTE</string>
-    <string name="latte_desc">A tall, mild \'milk coffee\' (about 150-300 ml). An
-espresso with steamed milk and only a little milk foam poured over it. Serve in a
-latte glass or a coffee cup. Flavoured syrup can be added.</string>
-    <string name="coffee_list">Coffee List</string>
-    <string name="coffee_favorites">My Favorite Coffee</string>
-    <string name="cafe_list">Cafe List</string>
+    <!-- App Name / Toolbar -->
+    <string name="app_name">fragment_cafe</string>
+    <string name="app_title">My Coffee App</string>
+
+    <!-- Tabs -->
+    <string name="tab_starbucks">STARBUCKS</string>
+    <string name="tab_janji_jiwa">JANJI JIWA</string>
+    <string name="tab_kopi_kenangan">KOPI KENANGAN</string>
+
+    <!-- Fragment -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coffee_favorites">Your Coffee Favorites</string>
+    <string name="latte_title">Latte</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_header_desc">Navigation header description</string>
+    <string name="menu_coffee">Coffee</string>
+    <string name="menu_favorites">Favorites</string>
+
+    <!-- Bottom Navigation -->
     <string name="bottom_menu_coffee">Coffee</string>
     <string name="bottom_menu_cafe">Cafe</string>
-    <string name="starbucks_title">STARBUCKS</string>
-    <string name="janjijiwa_title">JANJI JIWA</string>
-    <string name="kopikenangan_title">KOPI KENANGAN</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tab_hot_drinks">Hot Drinks</string>
-    <string name="tab_cold_drinks">Cold Drinks</string>
-    <string name="tab_pastries">Pastries</string>
+    <string name="nav_coffee">Coffee</string>
+    <string name="nav_cafe">Cafe</string>
+
+    <string name="starbucks_title">Starbucks</string>
+    <string name="janjijiwa_title">Janji Jiwa</string>
+    <string name="kopikenangan_title">Kopi Kenangan</string>
+
+    <string name="starbucks_desc">Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington.</string>
+    <string name="janjijiwa_desc">Janji Jiwa is a local coffee brand popular among students, workers, and families.</string>
+    <string name="kopikenangan_desc">Kopi Kenangan’s mission is to serve high-quality coffee with fresh local ingredients across Indonesia and beyond.</string>
+
 </resources>
